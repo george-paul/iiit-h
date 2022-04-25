@@ -1,5 +1,5 @@
 # iiith
-Notes and files of George Paul studying in the Computer Science Dual Degree (Lateral Entry) program at International Institute of Information Technology, Hyderabad
+Notes and files of George Paul studying in the Computer Science Dual Degree (Lateral Entry) program at the International Institute of Information Technology, Hyderabad
 
 ## Sem 2-1 (monsoon21)
 
