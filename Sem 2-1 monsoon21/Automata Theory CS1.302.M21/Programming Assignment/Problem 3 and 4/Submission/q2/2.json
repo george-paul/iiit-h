@@ -1,0 +1,15 @@
+{
+	axiom: 'F',
+	productions: 
+	{
+		'F': 'F+F--F+F',
+	},
+	finals: 
+	{
+		'+': () => {ctx.rotate((Math.PI/180) * -angle)},
+		'-': () => {ctx.rotate((Math.PI/180) *  angle)},
+		'[': () => {ctx.save()},
+		']': () => {ctx.restore()},
+		'F': () => drawLine()
+	}
+}

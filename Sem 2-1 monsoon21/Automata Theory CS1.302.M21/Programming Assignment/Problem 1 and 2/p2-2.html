@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+	<script src="lindenmayer.browser.js" ></script>
+	<canvas id="canvas" width="3000" height="1000"></canvas>
+	<script>
+
+// ------------------------------- Start JS -------------------------------
+
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+ctx.fillStyle = 'black';
+ctx.strokeStyle = 'white';
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+ctx.translate(canvas.width * 0.1, canvas.height * 0.8);
+ctx.translate(0, 100);
+
+// ---------------------- P1.1 ----------------------
+
+const angle = 70;
+const lineLength = 100;
+const iters = 4;
+ctx.rotate(Math.PI/180 * 80)
+
+function drawLine()
+{
+	ctx.beginPath()
+	ctx.moveTo(0,0)
+	ctx.lineTo(0, -lineLength / (iters + 1))
+	ctx.stroke()
+	ctx.translate(0, -lineLength / (iters + 1))
+}
+
+var lsys = new LSystem({
+	axiom: 'F',
+	productions: 
+	{
+		'F': 'F+F--F+F',
+	},
+	finals: 
+	{
+		'+': () => {ctx.rotate((Math.PI/180) * -angle)},
+		'-': () => {ctx.rotate((Math.PI/180) *  angle)},
+		'[': () => {ctx.save()},
+		']': () => {ctx.restore()},
+		'F': () => drawLine(),
+		'G': () => drawLine(),
+		'X': () => drawLine(),
+		'Y': () => drawLine(),
+	}
+})
+
+lsys.iterate(iters);
+lsys.final();
+
+// ------------------------------- End   JS -------------------------------
+
+	</script>
+</body>
+<!-- <style>
+	canvas{
+		image-rendering: pixelated;
+	}
+</style> -->
+</html>

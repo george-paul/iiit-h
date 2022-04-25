@@ -1,0 +1,14 @@
+{
+	"tasks": 
+	[
+		{
+			"type": "shell",
+			"label": "Multifile C program with Make",
+			"command": "make",
+			"problemMatcher": [
+				"$gcc"
+			]
+		}
+	],
+	"version": "2.0.0"
+}

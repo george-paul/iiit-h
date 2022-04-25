@@ -1,0 +1,1 @@
+SELECT 'Cant believe the assignments are all done!' as '';

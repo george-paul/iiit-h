@@ -1,0 +1,9 @@
+SELECT X,Y,Z
+FROM 
+(
+  SELECT X,Y,Z,
+  X*X+Y*Y+Z*Z as EUDIST
+  FROM POINT
+  ORDER BY EUDIST
+) AS dist
+LIMIT k;

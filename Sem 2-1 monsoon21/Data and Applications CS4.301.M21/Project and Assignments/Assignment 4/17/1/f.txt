@@ -1,0 +1,20 @@
+CREATE TABLE ROTATED (X FLOAT, Y FLOAT, Z FLOAT);
+
+CREATE VIEW ROT AS
+SELECT col1, col2, col3, ROW_NUMBER() OVER() as r FROM ROTATE;
+
+DELIMITER $$
+CREATE FUNCTION GetRotatedPoint(px FLOAT, py FLOAT ,pz FLOAT, ro INT) RETURNS FLOAT(4) DETERMINISTIC
+BEGIN
+  DECLARE rot FLOAT(4) DEFAULT 0.0;
+  SELECT px * R.col1 + py * R.col2 + pz * R.col3 INTO rot FROM ROT AS R WHERE R.r = ro;
+  RETURN rot;
+END $$
+DELIMITER ;
+
+INSERT INTO ROTATED
+SELECT GetRotatedPoint(p.X, p.Y, p.Z, 1), GetRotatedPoint(p.X, p.Y, p.Z, 2), GetRotatedPoint(p.X, p.Y, p.Z, 3) FROM POINT as p;
+
+DROP VIEW ROT;
+
+SELECT * FROM ROTATED;

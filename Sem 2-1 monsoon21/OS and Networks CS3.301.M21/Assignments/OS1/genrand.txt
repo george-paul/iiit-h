@@ -1,0 +1,1 @@
+tr -cd "A-Za-z 0-9" < /dev/urandom | fold -w100 | head -n 10700000 > 1gb.txt

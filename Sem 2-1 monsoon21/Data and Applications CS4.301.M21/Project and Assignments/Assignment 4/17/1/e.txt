@@ -1,0 +1,10 @@
+SET @a := alpha;
+
+CREATE TABLE ROTATE (col1 FLOAT, col2 FLOAT, col3 FLOAT);
+
+INSERT INTO ROTATE VALUES
+  (cos(@a), -sin(@a), 0),
+  (sin(@a), cos(@a), 0),
+  (0, 0, 1);
+
+SELECT * FROM ROTATE;

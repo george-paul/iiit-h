@@ -1,0 +1,3 @@
+SELECT FREQ as 'FREQ of Lotus' 
+FROM INVINDEX 
+WHERE WORD = 'Lotus';

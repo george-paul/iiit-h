@@ -1,0 +1,2 @@
+SELECT AVG(X) AS CentroidX, AVG(Y) AS CentroidY, AVG(Z) AS CentroidZ
+FROM POINT;
