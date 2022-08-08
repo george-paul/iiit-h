@@ -1,0 +1,20 @@
+HS8.102-Phil.IHS/Assignment-1/2021121006/CSD
+
+# Intro to Human Sciences - Assignment 1
+
+The history of the Turing Test is surprising in that Alan Turing was quoted to have said that by the year 2000, a computer with 100MB of memory would be able to fool 30% of human judges but,  in The Loebner Prize's history computers have only managed to fool a human judge once [^1] 
+
+In this kind of world that we're in, when we consider the question at hand, another one arises- If computers (so far) have been unable to effectively fool humans when they're the ones conversing, will it be any different when the computer is asked to be the judge after conversing with both a human and a computer.
+
+One could say that the defining feature of humans over computers, or even less intelligent animals, is the ability to innovate and come up with complex ideas. And not only that, but also to communicate those ideas effectively. 
+I, as the author of this document, has come up with original thoughts that are only slightly inspired from outside influences (after all is there such a thing as a completely original idea?). I've also used the medium of English to communicate these ideas to you, the reader. "Would a computer be able to do that?" is what I believe to be the crux of Alan Turing's version of the Turing Test.
+
+This is what must be asked of a computer to demonstrate that it is intelligent- Come up with an original idea and communicate it. Admittedly, chatbot technology is advancing and maybe it could even reach a point where a computer can generate near-humanlike text that's indistinguishable from human speech. But even if such an advancement occurs, will computers ever be intelligent enough to innovate original ideas? For example, can computers ever come up with an idea upon which a company can be founded, or can computers create art with meaning behind it that wasn't just influenced from (and effectively copied from) a dataset of previously created art. Will computers ever solve a real-world problem with an inventive, feasible solution limited by real-world constraints.
+
+Now, can computers tell when its conversation partner is a computer as mentioned in the modified version of the Turing Test? The original Turing Test asks a human to judge. When a computer is judging, The computer could, say give the test subjects an image to parse or a text which have blanks that the test subject needs to fill. I believe a computer can be programmed well enough to tell when it is conversing with a computer. In fact, a version of this already exists in the form of a CAPTCHA [^2]. Computers are already able to, for example, take an image of text and obscure it sufficiently to a degree such that the image cannot be parsed well enough by a computer for it to extrapolate the underlying text. The programmer, could create and train an artificial intelligence model on correct and wrong answers to particular questions that the computer is programmed to ask. Whereas the task of training and creating such a model to answer any question with sufficiently human qualities and speech is a much more difficult task and could even be impossible with the ways computers "think" as of now. This leads us to think that being able to identify a human and a computer after conversation with both isn't a satisfactory display of intelligence.
+
+Consider, even, the case where computers could pass CAPTCHA style questions and tests. The task of identifying a human among a human and a computer is so much easier and, most importantly, easier to program into a computer than it is to program a computer to behave and respond to questions like a human for a human judge. And it becomes even more difficult when you consider that responses often have to be in language that sound humanlike and also if the absolute limits of humanity and intelligence, as was mentioned above in the passage about innovation, are tested then it will be a long time, if not forever, before a computer with sufficiently convincing answers is created. 
+
+[^1]: https://www.historyofinformation.com/detail.php?id=4289
+[^2]: https://www.cloudflare.com/en-in/learning/bots/how-captchas-work/
+

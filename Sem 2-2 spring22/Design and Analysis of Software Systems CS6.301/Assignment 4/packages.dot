@@ -1,0 +1,24 @@
+digraph "packages" {
+rankdir=BT
+charset="utf-8"
+"ball" [color="black", label="ball", shape="box", style="solid"];
+"ballcollision" [color="black", label="ballcollision", shape="box", style="solid"];
+"board" [color="black", label="board", shape="box", style="solid"];
+"brick" [color="black", label="brick", shape="box", style="solid"];
+"colors" [color="black", label="colors", shape="box", style="solid"];
+"getch" [color="black", label="getch", shape="box", style="solid"];
+"main" [color="black", label="main", shape="box", style="solid"];
+"paddle" [color="black", label="paddle", shape="box", style="solid"];
+"powerup" [color="black", label="powerup", shape="box", style="solid"];
+"ball" -> "board" [arrowhead="open", arrowtail="none"];
+"ball" -> "brick" [arrowhead="open", arrowtail="none"];
+"ball" -> "getch" [arrowhead="open", arrowtail="none"];
+"brick" -> "board" [arrowhead="open", arrowtail="none"];
+"brick" -> "getch" [arrowhead="open", arrowtail="none"];
+"main" -> "board" [arrowhead="open", arrowtail="none"];
+"main" -> "brick" [arrowhead="open", arrowtail="none"];
+"main" -> "paddle" [arrowhead="open", arrowtail="none"];
+"paddle" -> "board" [arrowhead="open", arrowtail="none"];
+"paddle" -> "getch" [arrowhead="open", arrowtail="none"];
+"powerup" -> "board" [arrowhead="open", arrowtail="none"];
+}

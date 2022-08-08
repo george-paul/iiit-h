@@ -1,0 +1,12 @@
+digraph "classes" {
+rankdir=BT
+charset="utf-8"
+"10.ball.Ball" [color="black", fontcolor="black", label="{Ball|flag : int\llives\lscore\lxv\lyv\l|collision()\lcreateball()\lexplodable()\lget_distance(x, y)\l}", shape="record", style="solid"];
+"10.ballcollision.Ballcollision" [color="black", fontcolor="black", label="{Ballcollision|lives\lscore\lx\lxv\ly\lyv\l|decreaselives()\lget_lives()\lhit_paddle(xv, yv, xv1, yv1, flag)\lhit_wall(xv, yv, xv1, yv1)\lmove_ball(xv, yv, xv1, yv1)\lmoveball()\l}", shape="record", style="solid"];
+"10.board.Board" [color="black", fontcolor="black", label="{Board|board\l|printboard()\l}", shape="record", style="solid"];
+"10.brick.Brick" [color="black", fontcolor="black", label="{Brick|cols : int\lpower : list\lrows : int\l|assign_color()\lblack_brick(y, x)\lcyan_brick(y, x)\lgreen_brick(y, x)\lred_brick(y, x)\lyellow_brick(y, x)\l}", shape="record", style="solid"];
+"10.colors.Exploadbrick" [color="black", fontcolor="black", label="{Exploadbrick|\l|assign_color()\l}", shape="record", style="solid"];
+"10.paddle.Paddle" [color="black", fontcolor="black", label="{Paddle|ballx\lbally\lflag : int\lx\ly\l|createpaddle()\lexpandpaddle(x, y)\llivesdecreased()\lmove_paddle()\l}", shape="record", style="solid"];
+"10.colors.PowerN" [color="black", fontcolor="black", label="{PowerN|\l|assign_color()\l}", shape="record", style="solid"];
+"10.powerup.Powerup" [color="black", fontcolor="black", label="{Powerup|x\ly\lyv\l|decidepowerup()\lExpand()\l}", shape="record", style="solid"];
+}

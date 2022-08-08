@@ -1,0 +1,33 @@
+DASS Assginment March 24, 2022
+
+---A1---
+When working with such large codebases, it often occurs that developers don't understand each others' code. The intent is to always ensure that the codebase can be extensible and understandable in the future.
+The expert, veteran developers at Google broadly agree that code review is an important tool in the maintenance of code and it is seen as a necessary, although efficient step.
+Some tools used in code reviewing are - Gerrit, Critique etc
+
+
+---A2---
+The code review flow is as follows:
+1) Creating: Developers make changes to the code and once a unit is completed, a change is created.
+2) Previewing: The changes are communicated to the necessary people. The diff is viewed using a code review tool and analysed.
+3) Commenting: UI diff is viewed and comments are made. The results of the Previewing step are also considered. Comments can either be Resolved or Unresolved.
+4) Feedback: The author of the changes views the comments and accordingly makes further changes with the feedback in mind and builds the second set of changes.
+5) Approval: More comments are made (if necessary) and the changes are iterated until the changes made can be committed at which point approval is received. 
+
+Code reviewing ensures a standard, in terms of style and functionality, for the code being pushed and for future developers as well to ensure understandability.
+
+---A3---
+Some software engineering practices at Google are:
+> Thorough creation of documentation for every functionality that the software undertakes. In a way that even a layman can understand.
+> Current business needs are addressed in the form of software and ideas for new software are always being entertained pragmatically.
+> Automated and manual testing without any holes are undertaken by Quality Assurance and Devops teams so that proper bug free software is developed.
+
+---A4---
+Some Convergent Coding Practices are:
+> Changes are made in small batches
+> Two reviewers find an optimal number of defects
+> Review must be treated as a group activity rather than a defect finding activity
+
+
+---A5---
+Google mainly uses Gerrit with a quicker process involving around 1 reviewer, meanwhile Microsoft commits upto 4 reviewers and spends much more time, upto 24 hours on their code review while using CodeFlow.

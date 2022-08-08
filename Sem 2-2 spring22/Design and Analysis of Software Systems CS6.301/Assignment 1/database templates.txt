@@ -1,0 +1,21 @@
+User: 
+{
+	"_id":{"$oid":"61f69c488edde4a6484f2224"},
+	"username":"advaith",
+	"password":"sovaMain",
+	"email":"advaith@gmail.com",
+	"phone":"9895756423",
+	"age":{"$numberInt":"20"},
+	"batch":"UG3"
+}
+
+Vendor: 
+{
+  "username": "juicecanteen",
+  "password": "oreoshake",
+  "email": "jc@iiith.ac.in",
+  "phone": "9496384812",
+  "managerName": "Juice Manager",
+  "shopName": "Juice Canteen",
+  "openClose": "3pm-3am"
+}

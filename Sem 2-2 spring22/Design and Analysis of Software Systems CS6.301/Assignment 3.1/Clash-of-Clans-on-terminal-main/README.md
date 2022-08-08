@@ -1,0 +1,1 @@
+A clash of clans clone made on python3 (without pygame) for the terminal
