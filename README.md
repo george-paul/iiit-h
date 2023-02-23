@@ -1,5 +1,9 @@
-# iiith
-Notes and files of George Paul studying in the Computer Science Dual Degree (Lateral Entry) program at the International Institute of Information Technology, Hyderabad
+# iiith-public
+Notes and files for completed semesters of George Paul studying  in the Computer Science Dual Degree (Lateral Entry) program at  International Institute of Information Technology, Hyderabad. 
+
+For plagiarism purposes, you won't find current semesters here. Feel free to use anything in here if it'll help you out at all :D (or even if you're just curious).
+
+
 
 ## Sem 2-1 (monsoon21)
 
@@ -27,3 +31,29 @@ Classes began on 3 January 2022.
 - Machine, Data and Learning
 - Program Verification
 - Value Education
+
+## Sem 3-1 monsoon22
+
+Classes began on 28 July 2022.
+
+**Courses:**
+
+- Data Systems
+- Game Design and Engineering
+- Introduction to Literature
+- Introduction to Stochastic Processes
+- Learning and Memory
+- Honours Project 1
+
+## Sem 3-2 spring23
+
+Classes began on 3 January 2023.
+
+**Courses:**
+
+- Software Engineering
+- Principles of Information Security
+- Mechatronics System Design
+- Cognitive Neuroscience
+- Readings in Russian Literature
+- Honours Project 2
