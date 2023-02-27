@@ -1,4 +1,4 @@
-# iiith-public
+# iiit-h
 Notes and files for completed semesters of George Paul studying  in the Computer Science Dual Degree (Lateral Entry) program at  International Institute of Information Technology, Hyderabad. 
 
 For plagiarism purposes, you won't find current semesters here. Feel free to use anything in here if it'll help you out at all :D (or even if you're just curious).
