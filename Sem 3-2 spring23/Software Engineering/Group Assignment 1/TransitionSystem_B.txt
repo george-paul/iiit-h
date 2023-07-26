@@ -1,0 +1,135 @@
+//
+// -------------------------------------- U : Action Space --------------------------------------
+//
+U = 
+{
+	// a Go_Back action is available throughout the system which
+	// navigates back to the previously viewed screen
+	Home =
+	{
+		Go_Calendar,
+		Go_Dashboard,
+		Go_AppointmentsList,
+		Go_Automation,
+	},
+	Calendar =
+	{
+		Select_appointment(appointment),
+		Next_month,
+		Prev_month,
+	},
+	Dashboard =
+	{
+
+	},
+	AppointmentsList =
+	{
+		Filter_view(filter),
+		Sort_view(sorting),
+		Select_appointment(appointment),
+	},
+	AppointmentView =
+	{
+		Change_status(status),
+		Make_payment,
+	},
+}
+
+//
+// -------------------------------------- Y : Observable Space --------------------------------------
+//
+Y = 
+{
+	Home =
+	{
+		Home_view,
+	},
+	Calendar =
+	{
+		Calendar_view(month),
+	},
+	Dashboard =
+	{
+		// Displays the next appointment, total sales, time left in the day etc.
+		Dashboard_view,
+	},
+	AppointmentsList =
+	{
+		List_Appointments,
+	},
+	AppointmentView =
+	{
+		Appointment_details,
+	},
+
+}
+
+//
+// -------------------------------------- X : State Space --------------------------------------
+//
+X = 
+{
+	Screen from {Any Screen},
+	// Appointment is essentially a tuple consisting of things like (totalCost, assignedStaff, status, date, time, name etc.)
+	Appointment from {Any possible appoinment detail specification}
+	Month from {Any month},
+	Filter from {All, Completed, Incomplete, Late, NoShow, ...},
+	Sorting from {Latest, Oldest, Highest Profit, ...},
+}
+
+//
+// -------------------------------------- X : Initial State Space --------------------------------------
+//
+X_0 = 
+{
+	// A stack of screens is also maintained to support the Go_Back action
+	Screen: Home,
+	Appointment: null,
+	Month: currentMonth,
+	Filter: All,
+	Sorting: Latest,
+}
+
+//
+// -------------------------------------- f : State Transition Function --------------------------------------
+//
+// f(x1,u) = x2
+// format: 
+// > {x1} + u = {x2}
+// If a state variable is omitted, then it doesn't matter for that mapping and could be any value
+// Screen won't be mentioned in {x1} since only the actions specified under each screen are available in that screen
+
+Home
+> {} + Go_Calendar = {Screen: Calendar}
+> {} + Go_Dashboard = {Screen: Dashboard}
+> {} + Go_AppointmentsList = {Screen: AppointmentsList}
+
+
+Calendar
+> {} + Select_appointment(appointment) = {Screen: AppointmentView, Appoinment: appoinment}
+> {} + Next_month = {Month: currentMonth+1}
+> {} + Prev_month = {Month: currentMonth-1}
+
+AppointmentsList
+> {} + Filter_view(filter) = {Filter: filter}
+> {} + Sort_view(sorting) = {Sorting: sorting}
+
+AppointmentView
+> {} + Change_status(status) = {} ... Change the status of currentAppoinment to status via the overall system Q
+> {} + Make_payment = {} ... Make payment via payment gateway and do Change_status(Paid)
+
+//
+// -------------------------------------- h : Map from States to Observables --------------------------------------
+//
+// h(x) = y
+// format: 
+// > {x} = y
+// If a state variable is omitted, then it doesn't matter for that mapping and could be any value
+
+> {Screen: Home} = Home_view
+
+> {Screen: Calendar, Month: month} = Calendar_view(month) 
+
+> {Screen: Dashboard} = Dashboard_view
+
+> {Screen: AppointmentsList} = List_Appointments

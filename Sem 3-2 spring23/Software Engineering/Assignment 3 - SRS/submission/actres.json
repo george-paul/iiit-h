@@ -1,0 +1,56 @@
+{
+    "ObjAction": [
+        {
+            "actresid": "Cut_scpale",
+            "sourceObj": "Scaple",
+            "targetObj": "HumanBody",
+            "IsCollision": true,
+            "response": "Tear/open/seperate/Natural",
+            "comment": "When the scaple touches human body the flesh in that area seperates at the contac tpoint of scaple",
+            "Syncronous": true,
+            "repeatactionfor": "null"
+        },
+        {
+            "actresid": "Cut_scissors",
+            "sourceObj": "Scissors",
+            "targetObj": "HumanBody",
+            "IsCollision": true,
+            "response": "Cut/open/seperate/Natural",
+            "comment": "When the Scissor closes at any point on teh human body that point seperates and reveles the beneath structure",
+            "Syncronous": true,
+            "repeatactionfor": "null"
+        },
+        {
+            "actresid": "Open_seperators",
+            "sourceObj": "Seperators",
+            "targetObj": "HumanBody",
+            "IsCollision": true,
+            "response": "hold/Natural",
+            "comment": "When the is placed between two cut portions , the cut portions will not move towards each other beyond th eboundary of the seperator",
+            "Syncronous": true,
+            "repeatactionfor": "null"
+        },
+
+        {
+            "actresid": "clean_cotton",
+            "sourceObj": "Cotton",
+            "targetObj": "HumanBody",
+            "IsCollision": true,
+            "response": "rub/Natural",
+            "comment": "When cotton is rubbed/moved across a human body location with blood on it , the blood will be removed and the layer below the blood is exposed",
+            "Syncronous": true,
+            "repeatactionfor": "null"
+        },
+
+        {
+            "actresid": "close_needle",
+            "sourceObj": "Needle",
+            "targetObj": "HumanBody",
+            "IsCollision": true,
+            "response": "close/Natural",
+            "comment": "When the needle is sewed across an opening on human body the opening will be closed with stich marks on the closure",
+            "Syncronous": true,
+            "repeatactionfor": "null"
+        }
+    ]
+}

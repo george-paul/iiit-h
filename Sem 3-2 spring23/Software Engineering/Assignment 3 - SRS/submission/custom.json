@@ -1,0 +1,25 @@
+{
+	"behavior": [
+		{
+			"bid": "failcondition",
+			"bname": "fail on blood loss",
+			"bdescription": "",
+			"articlesused": "",
+			"logic": "aWYoIHshKCRyZXBsYXlNb2RlKX0gQU5EIHskYmxvb2QgPCAkbWluQmxvb2RMZXZlbH0pDQp0aGVuIGZhaWwgPSB0cnVl="
+		},
+		{
+			"bid": "showcontrols",
+			"bname": "show replay or operation controls",
+			"bdescription": "",
+			"articlesused": "",
+			"logic": "aWYgKCB7JHJlcGxheU1vZGV9ICkNCnRoZW4gc2hvd1JlcGxheUNvbnRyb2xzID0gdHJ1ZQ0KZWxzZSBzaG93T3BlcmF0aW9uQ29udHJvbHMgPSB0cnVl="
+		},
+		{
+			"bid": "recordinstrument",
+			"bname": "record instrument location and parameters when incision",
+			"bdescription": "",
+			"articlesused": "",
+			"logic": "aWYgKCAkaW5jaXNpb25PY2N1cnJlZCApDQpmb3IgKCBfaW5zdHJ1bWVudCBpbiAkaW5zdHJ1bWVudHMpDQpkbyAjcmVjb3JkKF9pbnN0cnVtZW50KQ=="
+		}
+	]
+}

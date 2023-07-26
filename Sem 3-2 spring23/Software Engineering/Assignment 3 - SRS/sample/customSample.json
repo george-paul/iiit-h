@@ -1,0 +1,25 @@
+{
+	"behavior": [
+		{
+			"bid": "pinfall",
+			"bname": "behavior for pin fall",
+			"bdescription": "",
+			"articlesused": "",
+			"logic": "aWYoIHtfZ2FtZWJhbGwgJGhpdHMgX2FueXBpbn0gT1Ige19hbnlwaW4gJGhpdHMgX2FueXBpbn0pCnRoZW4gJGZhbGwoX2FueXBpbik="
+		},
+		{
+			"bid": "scoreupdate",
+			"bname": "rule for scoring",
+			"bdescription": "",
+			"articlesused": "",
+			"logic": "aWYgKCRyb2xsID0gdHJ1ZSkKcG9pbnQgPSAjY291bnQoJGZhbGwoX2FueXBpbikpICogaW5kX3BvaW50CmVsc2UgCnBvaW50ID0gbnVsbAo="
+		},
+		{
+			"bid": "strikescore",
+			"bname": "rule for scoring",
+			"bdescription": "",
+			"articlesused": "",
+			"logic": "aWYgKHskcm9sbCA9IHRydWV9IEFORCB7I2NvdW50KCRmYWxsKF9hbnlwaW4pPTEwfSkKdGhlbiBwb2ludCA9IHN0cmlrZV9wb2ludAplbHNlCnBvaW50ID0gbnVsbA=="
+		}
+	]
+}

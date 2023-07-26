@@ -1,0 +1,183 @@
+//
+// -------------------------------------- U : Action Space --------------------------------------
+//
+U = 
+{
+	SelectService =
+	{
+		Click_Service(service),
+		Go_Appointments,
+		Go_Profile,
+	},
+
+	SelectDateTime =
+	{
+		Click_date(date),
+		Click_time(time),
+	},
+
+	AccountDetails =
+	{
+		Select_login(loginType)
+		Facebook_sign_in(name),
+		Sign_in(name),
+		Sign_up(name),
+	},
+
+	Confirmation =
+	{
+		Confirm
+		Start_over,
+	},
+
+	Confirmed =
+	{
+		Book_another,
+	},
+
+	Appointments =
+	{
+		Cancel_Appointment(appointment),
+	},
+
+	Profile =
+	{
+		Update_Details(details),
+	},
+}
+
+//
+// -------------------------------------- Y : Observable Space --------------------------------------
+//
+Y = 
+{
+	SelectService =
+	{
+		List_of_services,
+	},
+
+	SelectDateTime =
+	{
+		Calendar_Display,
+		Date(date)_selected_and_times_displayed,
+	},
+
+	AccountDetails =
+	{
+		Login_type_selection,
+		Email_details_entry_display,
+		Facebook_login_provider,
+	},
+
+	Confirmation =
+	{
+		Show_order(appointment),
+	},
+
+	Confirmed =
+	{
+		Show_confirmed_order(appointment),
+	},
+
+	Appointments =
+	{
+		List_Appointments,
+	},
+
+	Profile =
+	{
+		Profile_updation_display,
+	},
+}
+
+//
+// -------------------------------------- X : State Space --------------------------------------
+//
+X = 
+{
+	Screen from {Any Screen},
+	Service from {1, 2, 3},
+	Date from {Future Dates},
+	Time from {Future Times},
+	LoginType from {Email, Facebook},
+	Name from {Any String},
+	CurrentAppointment from {Any possible (Name, Date, Time)},
+}
+
+//
+// -------------------------------------- X : Initial State Space --------------------------------------
+//
+X_0 = 
+{
+	Screen: SelectService,
+	// Service Represents a particular staff member also i.e. A service is essentially a service-staff pair 
+	Service: null,
+	Date: null,
+	Time: null,
+	LoginType: null,
+	Name: null,
+	CurrentAppointment: null,
+}
+
+//
+// -------------------------------------- f : State Transition Function --------------------------------------
+//
+// f(x1,u) = x2
+// format: 
+// > {x1} + u = {x2}
+// If a state variable is omitted, then it doesn't matter for that mapping and could be any value
+// Screen won't be mentioned in {x1} since only the actions specified under each screen are available in that screen
+
+Screen: SelectService
+> {} + Click_Service(service) = {Screen: SelectDateTime, Service: service}
+> {} + Go_Appointments = {Screen: Appointments}
+> {} + Go_Profile = {Screen: Go_Profile}
+
+Screen: SelectDateTime
+> {} + Click_Date(date) = {Date: date}
+> {} + Click_Time(time) = {Screen: AccountDetails, Time: time}
+
+Screen: AccountDetails
+> {} + Select_login(loginType) = {LoginType: loginType}
+> {} + Facebook_sign_in(name) = {Screen: Confirmation, Name: name, CurrentAppointment: (name, Date, Time)}
+> {} + Sign_in(name) = {Screen: Confirmation, Name: name, CurrentAppointment: (name, Date, Time)}
+> {} + Sign_up(name) = {Screen: Confirmation, Name: name, CurrentAppointment: (name, Date, Time)}
+
+Screen: Confirmation
+> {} + Confirm = {Screen: Confirmed} ... CurrentAppointment is confirmed via the overall system Q
+> {} + Start_over = {Screen: SelectService}
+
+Screen: Confirmed
+> {} + Book_another = {Screen: SelectService}
+
+Screen: Appointments
+> {} + Cancel_Appointment(appointment) = {Screen: SelectService} ... appointment is cancelled via the overall system Q
+
+Screen: Profile
+> {} + Update_Details(details) = {Screen: SelectService} ... User's Details are updated to details via the overall system Q
+
+
+//
+// -------------------------------------- h : Map from States to Observables --------------------------------------
+//
+// h(x) = y
+// format: 
+// > {x} = y
+// If a state variable is omitted, then it doesn't matter for that mapping and could be any value
+
+> {Screen: SelectService} = List_of_services
+
+> {Screen: SelectDateTime, Date: null} = Calendar_Display
+> {Screen: SelectDateTime, Date: date} = Date(date)_selected_and_times_displayed
+
+> {Screen: AccountDetails, LoginType: null} = Login_type_selection
+> {Screen: AccountDetails, LoginType: Email} = Email_details_entry_display
+> {Screen: AccountDetails, LoginType: Facebook} = Facebook_login_provider
+
+> {Screen: Confirmation, Appointment: appointment} = Show_order(appointment)
+
+> {Screen: Confirmed, Appointment: appointment} = Show_confirmed_order(appointment)
+
+> {Screen: Appointments} = List_Appointments
+
+> {Screen: Profile} = Profile_updation_display

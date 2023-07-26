@@ -1,0 +1,1 @@
+# Link to CAD model: https://a360.co/3kocXHb

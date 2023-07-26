@@ -1,0 +1,58 @@
+// NOTE: Q acts as a kind of backend for our system of networks and so
+// won't have Observables. Hence Y and h mapping will be absent  
+
+
+//
+// -------------------------------------- U : Action Space --------------------------------------
+//
+U = 
+{
+	Confirm(appointment),
+	Cancel_Appointment(appointment),
+	Update_Details(details, customer),
+	Change_status(status, appt),
+	Add_staff(staffDetails),
+	Remove_staff(staff),
+	Create_schedule(newSchedule),
+	Resign(employee),
+}
+
+//
+// -------------------------------------- X : State Space --------------------------------------
+//
+X = 
+{
+	// Appointment is a tuple consisting of (totalCost, assignedStaff, status, date, time, name etc.)
+	Schedule: {Any possible list of Appointment}
+	AppointmentList: {Any possible list of Appointment}
+	// Customer is a tuple consisting of (name, number, ...)
+	CustomerList: {Any possible list of Customer} 
+	// Employee is a tuple consisting of (name, servicesProvided, salary, ...)
+	StaffList: {Any possible list of Employee}
+}
+
+//
+// -------------------------------------- X : Initial State Space --------------------------------------
+//
+X_0 = 
+{
+	Schedule: null,
+	StaffList: null,
+}
+
+//
+// -------------------------------------- f : State Transition Function --------------------------------------
+//
+// f(x1,u) = x2
+// format: 
+// > {x1} + u = {x2}
+// If a state variable is omitted, then it doesn't matter for that mapping and could be any value
+
+> {} + Confirm(appointment) = {AppointmentList: newAppointmentList with appointment added}
+> {AppointmentList: appointmentList that has appointment} + Cancel_Appointment(appointment) = {Schedule: newSchedule with appointment removed}
+> {CustomerList: list with customer} + Update_Details(details, customer) = {CustomerList: newCustomerList with details changed for that user}
+> {AppointmentList: appointmentList that has appt} + Change_status(status, appt) = {AppointmentList: newAppointmentList with status changed for appt}
+> {} + Add_staff(staffDetails) = {StaffList: new list with staff added acc to staffDetails}
+> {StaffList: list with staff} + Remove_staff(staff) = {StaffList: new list without staff}
+> {} + Create_schedule(newSchedule) = {Schedule: newSchedule}
+> {StaffList: list with employee} + Resign(employee) = {StaffList: list without employee}

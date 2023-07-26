@@ -1,0 +1,71 @@
+{
+	"animate_trigSync": {
+		"tsyncid": 21,
+		"tsOntrigger": true,
+		"SyncObjList": [],
+		"tSyncNote": "this statement is blank"
+	},
+	"animate_nontrigSync": {
+		"ntsyncid": 22,
+		"ntsOntrigger": false,
+		"ntSyncObjList": [],
+		"ntSyncNote": "this statement is blank"
+	},
+	"animate_trigAsync": {
+		"tasyncid": 23,
+		"taOntrigger": true,
+		"AsyncObjList": [
+			"_pinsetter1",
+			"_pinsetter2",
+			"_pinsetter3",
+			"_pinsetter4",
+			"_pinsetter5",
+			"_pinsetter6",
+			"_pinsetter7",
+			"_pinsetter8",
+			"_pinsetter9",
+			"_pinsetter10"
+		],
+		"tAsyncNote": "All these change their state unpon trigger by ball"
+	},
+	"animate_nontrigAsync": {
+		"ntasyncid": 24,
+		"ntaOntrigger": false,
+		"ntAsyncObjList": [
+			"_scoreboard",
+			"_floor"
+		],
+		"ntAsyncNote": ""
+	},
+	"routine": [
+		{
+			"routeid": 11,
+			"starttime": "00:30:00",
+			"endtime": "00:55:00",
+			"order": [
+				21,
+				23,
+				22,
+				24
+			]
+		},
+		{
+			"routeid": 12,
+			"starttime": "00:40:00",
+			"endtime": "00:45:00",
+			"order": [
+				21,
+				23
+			]
+		},
+		{
+			"routeid": 13,
+			"starttime": "00:10:00",
+			"endtime": "00:50:00",
+			"order": [
+				22,
+				24
+			]
+		}
+	]
+}

@@ -1,0 +1,131 @@
+//
+// -------------------------------------- U : Action Space --------------------------------------
+//
+U = 
+{
+	Login =
+	{
+		Login_as_admin(details),
+		Login_as_staff(details),
+	},
+
+	Home =
+	{
+		Go_ManageStaff,
+		Go_Automation,
+		Go_MySchedule,
+	},
+
+	ManageStaff = 
+	{
+		Add_staff(staffDetails),
+		Delete_staff(staff),
+	},
+
+	Automation =
+	{
+		Create_schedule,
+	},
+
+	MySchedule =
+	{
+		Edit_Schedule(newSchedule),
+		Resign,
+	}
+}
+
+//
+// -------------------------------------- Y : Observable Space --------------------------------------
+//
+Y = 
+{
+	Login =
+	{
+		Details_entry,
+	},
+
+	Home =
+	{
+		Home_view,
+	},
+
+	ManageStaff = 
+	{
+		Staff_list,
+	},
+
+	Automation =
+	{
+		Automation_menu,
+	},
+
+	MySchedule =
+	{
+		Schedule_view,
+	},
+}
+
+//
+// -------------------------------------- X : State Space --------------------------------------
+//
+X = 
+{
+	Screen from {Any Screen},
+	IsAdmin from {True, False},
+	Emp from {Any employee}
+}
+
+//
+// -------------------------------------- X : Initial State Space --------------------------------------
+//
+X_0 = 
+{
+	Screen: Login,
+	IsAdmin: null,
+	Emp: null,
+}
+
+//
+// -------------------------------------- f : State Transition Function --------------------------------------
+//
+// f(x1,u) = x2
+// format: 
+// > {x1} + u = {x2}
+// If a state variable is omitted, then it doesn't matter for that mapping and could be any value
+// Screen won't be mentioned in {x1} since only the actions specified under each screen are available in that screen
+
+Login
+> {} + Login_as_admin(details) = {Screen: Home, Emp: authenticatedEmployee, IsAdmin: True} ... queries the authentication server and gives the authenticatedEmployee as per details
+> {} + Login_as_admin(details) = {Screen: Home, Emp: authenticatedEmployee, IsAdmin: False} ... queries the authentication server and gives the authenticatedEmployee as per details
+
+Home
+> {IsAdmin: True} + Go_ManageStaff = {Screen: ManageStaff}
+> {IsAdmin: True} + Go_Automation = {Screen: Automation}
+> {IsAdmin: False} + Go_MySchedule = {Screen: MySchedule}
+
+ManageStaff
+> {} + Add_staff(staffDetails) = {} ... Adds staff according to staffDetails via the overall system Q
+> {} + Delete_staff(staff) = {} ... Removes staff from the staff list via the overall system Q
+
+Automation
+> {} + Create_schedule = {} ... Creates an automated schedule for employees and uploads it to the overall system Q
+
+MySchedule
+> {} + Edit_Schedule(newSchedule) = {} ... a staff applies to edit their schedule to newSchedule
+> {} + Resign = {} ... Removes Emp from the staff list after 30 days and edits the schedule accordingly via the overall system Q
+
+
+
+//
+// -------------------------------------- h : Map from States to Observables --------------------------------------
+//
+// h(x) = y
+// format: 
+// > {x} = y
+// If a state variable is omitted, then it doesn't matter for that mapping and could be any value
+
+> {Screen: Login} = Details_entry
+> {Screen: Home} = Home_view
+> {Screen: ManageStaff} = Staff_list
+> {Screen: Automation} = Automation_menu
+> {Screen: MySchedule} = Schedule_view

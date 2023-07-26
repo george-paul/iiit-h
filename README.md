@@ -57,3 +57,16 @@ Classes began on 3 January 2023.
 - Cognitive Neuroscience
 - Readings in Russian Literature
 - Honours Project 2
+
+## Sem 4-1 monsoon23
+
+Classes began on 31 July 2023.
+
+**Courses:**
+
+- Topics in Nanoscience
+- Data Foundation Systems
+- Information, Retrieval and Extraction
+- Behavioural Research &  Experimental Design
+- Basics of Ethics
+- Honours Project 3

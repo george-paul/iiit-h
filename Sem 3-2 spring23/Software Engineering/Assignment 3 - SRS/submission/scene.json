@@ -1,0 +1,96 @@
+{
+    "_scenename": "Virtual Reality Surgery Simulation",
+    "_sid": "45129",
+    "_slabel": "Virtual Reality for Surgery",
+    "_playarea": {
+        "#pid": "PA01",
+        "#length_playarea": "20",
+        "#breadth_playarea": "20",
+        "#height_playarea": "15",
+        "#comment": "The physical space required for the VR simulation.",
+        "#x_scenecenter": "5",
+        "#y_scenecenter": "2.5",
+        "#z_scenecenter": "5"
+    },
+    "_camera": {
+        "IsSceneObject": "true",
+        "trackingorigin": "floor"
+    },
+    "_initialcamerapos": {
+        "#x_initialcamerapos": "0",
+        "#y_initialcamerapos": "2.5",
+        "#z_initialcamerapos": "0"
+    },
+    "_viewport": {
+        "#x_viewport": "0",
+        "#y_viewport": "0",
+        "#w_viewport": "1920",
+        "#h_viewport": "1080"
+    },
+    "_clippingplane": {
+        "near_cp": "0.1",
+        "far_cp": "1000"
+    },
+    "_horizon": "true",
+    "_dof": "3",
+    "_skybox": "1",
+    "_controllers": {
+        "type": "motion",
+        "raycast": "true",
+        "raydistance": "100",
+        "raythinkness": "1",
+        "raycolor": "green",
+        "raytype": "straightline"
+    },
+    "_gravity": {
+        "value": "9.8"
+    },
+    "_interaction": "true",
+    "_nestedscene": {
+        "#value": "none",
+        "#scenecount": "0",
+        "#sid_order": "0"
+    },
+    "_audio": "true",
+    "_timeline": "true",
+    "_Opttxt1": "Welcome to the Virtual Reality Surgery Simulation System. This system is designed for hands-on training and evaluating surgeons' abilities. You will be able to interact with virtual objects and anatomical environments using natural and intuitive hand movements.",
+    "@context_mock": "_blank",
+    "usertype": [
+        {
+            "type": "single",
+            "uplayarea": {
+                "#length_uplayarea": "8",
+                "#breadth_uplayarea": "8",
+                "#height_uplayarea": "15"
+            },
+            "initialupos": {
+                "#x_initialupos": "-4",
+                "#y_initialupos": "0",
+                "#z_initialupos": "0"
+            },
+            "uplayareacenter": {
+                "#x_uplayareacenter": "-4",
+                "#y_uplayareacenter": "4",
+                "#z_uplayareacenter": "0"
+            }
+        },
+        {
+            "type": "multi",
+            "uplayarea": {
+                "#length_uplayarea": "10",
+                "#breadth_uplayarea": "10",
+                "#height_uplayarea": "15"
+            },
+            "initialupos": {
+                "#x_initialupos": "-4",
+                "#y_initialupos": "0",
+                "#z_initialupos": "0"
+            },
+            "uplayareacenter": {
+                "#x_uplayareacenter": "-4",
+                "#y_uplayareacenter": "4",
+                "#z_uplayareacenter": "0"
+            }
+        }
+    ]
+}

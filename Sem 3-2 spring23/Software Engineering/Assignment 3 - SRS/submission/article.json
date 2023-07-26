@@ -1,0 +1,527 @@
+{
+    "articles": [
+        {   "_objectname": "Scaple",
+            "_sid": "OTobj01",
+            "_slabel": "This is used to make an insicision",
+            "_IsHidden": 0,
+            "_enumcount": 1,
+            "_Is3DObject": 1,
+            "HasChild": 0,
+            "shape": "rectangle",
+            "dimension": {
+                "dradii": "null",
+                "dvolumn": "null",
+                "dlength": "10",
+                "dbreadth": "0.5",
+                "dheight": "null"
+            },
+            "IsText": false,
+            "IsText3D": false,
+            "lighting": {
+                "CastShadow": "1",
+                "ReceiveShadow": "1",
+                "ContributeGlobalIlumination": "1"
+            },
+            "IsIlluminate": true,
+            "Transform_initialpos": {
+                "#x_initialpos": "0",
+                "#y_initialpos": "5",
+                "#z_initialpos": "0"
+            },
+            "Transform_initialrotation": {
+                "#x_initialrotation": "0",
+                "#y_initialrotation": "5",
+                "#z_initialrotation": "0"
+            },
+            "Transform_objectscale": {
+                "#x_objectscale": "0",
+                "#y_objectscale": "5",
+                "#z_objectscale": "0"
+            },
+            "repeattransfrom": {
+                "distfactorx": "null",
+                "distfactory": "null",
+                "distfactorz": "null"
+            },
+            "Interaction": {
+                "XRGrabInteractable": "1",
+                "XRInteractionMaskLayer": "nothing/everything/custom",
+                "TrackPosition": "1",
+                "TrackRotation": "1",
+                "Throw_Detach": "1",
+                "forcegravity": "1",
+                "velocity": "0.1",
+                "angularvelocity": "0.1"
+            },
+            "Smoothing": "1",
+            "Smoothing_duration": "0.5",
+            "attachtransform": {
+                "#rotate_x": "null",
+                "#rotate_y": "null",
+                "#rotate_z": "null",
+                "#pos_x": "null",
+                "#pos_y": "null",
+                "#pos_z": "null"
+            },
+            "XRRigidObject": {
+                "value": "1",
+                "mass": "0.5",
+                "dragfriction": "0.2",
+                "angulardrag": "0.2",
+                "Isgravityenable": "true",
+                "IsKinematic": "1",
+                "CanInterpolate": "0",
+                "CollisionPolling": "discrete/continuous"
+            },
+            "aud_hasaudio": "0",
+            "aud_type": "null",
+            "aud_src": "null",
+            "aud_volume": "null",
+            "aud_PlayInloop": "null",
+            "aud_IsSurround": "null",
+            "aud_Dopplerlevel": "null",
+            "aud_spread": "null",
+            "aud_mindist": "null",
+            "aud_maxdist": "null",
+            "_Opttxt1": "null",
+            "@context_img_source": "null"
+        },
+
+        {   "_objectname": "Scissors",
+            "_sid": "OTobj02",
+            "_slabel": "This is used to make an tearing cut",
+            "_IsHidden": 0,
+            "_enumcount": 1,
+            "_Is3DObject": 1,
+            "HasChild": 0,
+            "shape": "rectangle",
+            "dimension": {
+                "dradii": "null",
+                "dvolumn": "null",
+                "dlength": "10",
+                "dbreadth": "0.5",
+                "dheight": "null"
+            },
+            "IsText": false,
+            "IsText3D": false,
+            "lighting": {
+                "CastShadow": "1",
+                "ReceiveShadow": "1",
+                "ContributeGlobalIlumination": "1"
+            },
+            "IsIlluminate": true,
+            "Transform_initialpos": {
+                "#x_initialpos": "0",
+                "#y_initialpos": "5",
+                "#z_initialpos": "0"
+            },
+            "Transform_initialrotation": {
+                "#x_initialrotation": "0",
+                "#y_initialrotation": "5",
+                "#z_initialrotation": "0"
+            },
+            "Transform_objectscale": {
+                "#x_objectscale": "0",
+                "#y_objectscale": "5",
+                "#z_objectscale": "0"
+            },
+            "repeattransfrom": {
+                "distfactorx": "null",
+                "distfactory": "null",
+                "distfactorz": "null"
+            },
+            "Interaction": {
+                "XRGrabInteractable": "1",
+                "XRInteractionMaskLayer": "nothing/everything/custom",
+                "TrackPosition": "1",
+                "TrackRotation": "1",
+                "Throw_Detach": "1",
+                "forcegravity": "1",
+                "velocity": "0.1",
+                "angularvelocity": "0.1"
+            },
+            "Smoothing": "1",
+            "Smoothing_duration": "0.5",
+            "attachtransform": {
+                "#rotate_x": "null",
+                "#rotate_y": "null",
+                "#rotate_z": "null",
+                "#pos_x": "null",
+                "#pos_y": "null",
+                "#pos_z": "null"
+            },
+            "XRRigidObject": {
+                "value": "1",
+                "mass": "0.5",
+                "dragfriction": "0.2",
+                "angulardrag": "0.2",
+                "Isgravityenable": "true",
+                "IsKinematic": "1",
+                "CanInterpolate": "0",
+                "CollisionPolling": "discrete/continuous"
+            },
+            "aud_hasaudio": "0",
+            "aud_type": "null",
+            "aud_src": "null",
+            "aud_volume": "null",
+            "aud_PlayInloop": "null",
+            "aud_IsSurround": "null",
+            "aud_Dopplerlevel": "null",
+            "aud_spread": "null",
+            "aud_mindist": "null",
+            "aud_maxdist": "null",
+            "_Opttxt1": "null",
+            "@context_img_source": "null"
+        },
+
+        {   "_objectname": "Seperators",
+            "_sid": "OTobj03",
+            "_slabel": "This is used to make an organs seperation",
+            "_IsHidden": 0,
+            "_enumcount": 1,
+            "_Is3DObject": 1,
+            "HasChild": 0,
+            "shape": "rectangle",
+            "dimension": {
+                "dradii": "null",
+                "dvolumn": "null",
+                "dlength": "10",
+                "dbreadth": "0.5",
+                "dheight": "null"
+            },
+            "IsText": false,
+            "IsText3D": false,
+            "lighting": {
+                "CastShadow": "1",
+                "ReceiveShadow": "1",
+                "ContributeGlobalIlumination": "1"
+            },
+            "IsIlluminate": true,
+            "Transform_initialpos": {
+                "#x_initialpos": "0",
+                "#y_initialpos": "5",
+                "#z_initialpos": "0"
+            },
+            "Transform_initialrotation": {
+                "#x_initialrotation": "0",
+                "#y_initialrotation": "5",
+                "#z_initialrotation": "0"
+            },
+            "Transform_objectscale": {
+                "#x_objectscale": "0",
+                "#y_objectscale": "5",
+                "#z_objectscale": "0"
+            },
+            "repeattransfrom": {
+                "distfactorx": "null",
+                "distfactory": "null",
+                "distfactorz": "null"
+            },
+            "Interaction": {
+                "XRGrabInteractable": "1",
+                "XRInteractionMaskLayer": "nothing/everything/custom",
+                "TrackPosition": "1",
+                "TrackRotation": "1",
+                "Throw_Detach": "1",
+                "forcegravity": "1",
+                "velocity": "0.1",
+                "angularvelocity": "0.1"
+            },
+            "Smoothing": "1",
+            "Smoothing_duration": "0.5",
+            "attachtransform": {
+                "#rotate_x": "null",
+                "#rotate_y": "null",
+                "#rotate_z": "null",
+                "#pos_x": "null",
+                "#pos_y": "null",
+                "#pos_z": "null"
+            },
+            "XRRigidObject": {
+                "value": "1",
+                "mass": "0.5",
+                "dragfriction": "0.2",
+                "angulardrag": "0.2",
+                "Isgravityenable": "true",
+                "IsKinematic": "1",
+                "CanInterpolate": "0",
+                "CollisionPolling": "discrete/continuous"
+            },
+            "aud_hasaudio": "0",
+            "aud_type": "null",
+            "aud_src": "null",
+            "aud_volume": "null",
+            "aud_PlayInloop": "null",
+            "aud_IsSurround": "null",
+            "aud_Dopplerlevel": "null",
+            "aud_spread": "null",
+            "aud_mindist": "null",
+            "aud_maxdist": "null",
+            "_Opttxt1": "null",
+            "@context_img_source": "null"
+        },
+
+        {   "_objectname": "Needle",
+            "_sid": "OTobj04",
+            "_slabel": "This is used to make an closure to insition",
+            "_IsHidden": 0,
+            "_enumcount": 1,
+            "_Is3DObject": 1,
+            "HasChild": 0,
+            "shape": "cylinder",
+            "dimension": {
+                "dradii": "null",
+                "dvolumn": "null",
+                "dlength": "0.5",
+                "dbreadth": "0.1",
+                "dheight": "null"
+            },
+            "IsText": false,
+            "IsText3D": false,
+            "lighting": {
+                "CastShadow": "1",
+                "ReceiveShadow": "1",
+                "ContributeGlobalIlumination": "1"
+            },
+            "IsIlluminate": true,
+            "Transform_initialpos": {
+                "#x_initialpos": "0",
+                "#y_initialpos": "5",
+                "#z_initialpos": "0"
+            },
+            "Transform_initialrotation": {
+                "#x_initialrotation": "0",
+                "#y_initialrotation": "5",
+                "#z_initialrotation": "0"
+            },
+            "Transform_objectscale": {
+                "#x_objectscale": "0",
+                "#y_objectscale": "5",
+                "#z_objectscale": "0"
+            },
+            "repeattransfrom": {
+                "distfactorx": "null",
+                "distfactory": "null",
+                "distfactorz": "null"
+            },
+            "Interaction": {
+                "XRGrabInteractable": "1",
+                "XRInteractionMaskLayer": "nothing/everything/custom",
+                "TrackPosition": "1",
+                "TrackRotation": "1",
+                "Throw_Detach": "1",
+                "forcegravity": "1",
+                "velocity": "0.1",
+                "angularvelocity": "0.1"
+            },
+            "Smoothing": "1",
+            "Smoothing_duration": "0.5",
+            "attachtransform": {
+                "#rotate_x": "null",
+                "#rotate_y": "null",
+                "#rotate_z": "null",
+                "#pos_x": "null",
+                "#pos_y": "null",
+                "#pos_z": "null"
+            },
+            "XRRigidObject": {
+                "value": "1",
+                "mass": "0.5",
+                "dragfriction": "0.2",
+                "angulardrag": "0.2",
+                "Isgravityenable": "true",
+                "IsKinematic": "1",
+                "CanInterpolate": "0",
+                "CollisionPolling": "discrete/continuous"
+            },
+            "aud_hasaudio": "0",
+            "aud_type": "null",
+            "aud_src": "null",
+            "aud_volume": "null",
+            "aud_PlayInloop": "null",
+            "aud_IsSurround": "null",
+            "aud_Dopplerlevel": "null",
+            "aud_spread": "null",
+            "aud_mindist": "null",
+            "aud_maxdist": "null",
+            "_Opttxt1": "null",
+            "@context_img_source": "null"
+        },
+
+        {   "_objectname": "Cotton",
+            "_sid": "OTobj05",
+            "_slabel": "This is used to clean blood",
+            "_IsHidden": 0,
+            "_enumcount": 1,
+            "_Is3DObject": 1,
+            "HasChild": 0,
+            "shape": "sphere",
+            "dimension": {
+                "dradii": "2",
+                "dvolumn": "null",
+                "dlength": "null",
+                "dbreadth": "null",
+                "dheight": "null"
+            },
+            "IsText": false,
+            "IsText3D": false,
+            "lighting": {
+                "CastShadow": "1",
+                "ReceiveShadow": "1",
+                "ContributeGlobalIlumination": "1"
+            },
+            "IsIlluminate": true,
+            "Transform_initialpos": {
+                "#x_initialpos": "0",
+                "#y_initialpos": "5",
+                "#z_initialpos": "0"
+            },
+            "Transform_initialrotation": {
+                "#x_initialrotation": "0",
+                "#y_initialrotation": "5",
+                "#z_initialrotation": "0"
+            },
+            "Transform_objectscale": {
+                "#x_objectscale": "0",
+                "#y_objectscale": "5",
+                "#z_objectscale": "0"
+            },
+            "repeattransfrom": {
+                "distfactorx": "null",
+                "distfactory": "null",
+                "distfactorz": "null"
+            },
+            "Interaction": {
+                "XRGrabInteractable": "1",
+                "XRInteractionMaskLayer": "nothing/everything/custom",
+                "TrackPosition": "1",
+                "TrackRotation": "1",
+                "Throw_Detach": "1",
+                "forcegravity": "1",
+                "velocity": "0.1",
+                "angularvelocity": "0.1"
+            },
+            "Smoothing": "1",
+            "Smoothing_duration": "0.5",
+            "attachtransform": {
+                "#rotate_x": "null",
+                "#rotate_y": "null",
+                "#rotate_z": "null",
+                "#pos_x": "null",
+                "#pos_y": "null",
+                "#pos_z": "null"
+            },
+            "XRRigidObject": {
+                "value": "1",
+                "mass": "0.5",
+                "dragfriction": "0.2",
+                "angulardrag": "0.2",
+                "Isgravityenable": "true",
+                "IsKinematic": "1",
+                "CanInterpolate": "0",
+                "CollisionPolling": "discrete/continuous"
+            },
+            "aud_hasaudio": "0",
+            "aud_type": "null",
+            "aud_src": "null",
+            "aud_volume": "null",
+            "aud_PlayInloop": "null",
+            "aud_IsSurround": "null",
+            "aud_Dopplerlevel": "null",
+            "aud_spread": "null",
+            "aud_mindist": "null",
+            "aud_maxdist": "null",
+            "_Opttxt1": "null",
+            "@context_img_source": "null"
+        },
+
+        {   "_objectname": "HumanBody",
+            "_sid": "OTobj06",
+            "_slabel": "This is the practice human body for the surgeons",
+            "_IsHidden": 0,
+            "_enumcount": 1,
+            "_Is3DObject": 1,
+            "HasChild": 0,
+            "shape": "box",
+            "dimension": {
+                "dradii": "null",
+                "dvolumn": "null",
+                "dlength": "6",
+                "dbreadth": "2",
+                "dheight": "1"
+            },
+            "IsText": false,
+            "IsText3D": false,
+            "lighting": {
+                "CastShadow": "1",
+                "ReceiveShadow": "1",
+                "ContributeGlobalIlumination": "1"
+            },
+            "IsIlluminate": true,
+            "Transform_initialpos": {
+                "#x_initialpos": "0",
+                "#y_initialpos": "5",
+                "#z_initialpos": "0"
+            },
+            "Transform_initialrotation": {
+                "#x_initialrotation": "0",
+                "#y_initialrotation": "5",
+                "#z_initialrotation": "0"
+            },
+            "Transform_objectscale": {
+                "#x_objectscale": "0",
+                "#y_objectscale": "5",
+                "#z_objectscale": "0"
+            },
+            "repeattransfrom": {
+                "distfactorx": "null",
+                "distfactory": "null",
+                "distfactorz": "null"
+            },
+            "Interaction": {
+                "XRGrabInteractable": "0",
+                "XRInteractionMaskLayer": "nothing/everything/custom",
+                "TrackPosition": "1",
+                "TrackRotation": "1",
+                "Throw_Detach": "1",
+                "forcegravity": "1",
+                "velocity": "0.1",
+                "angularvelocity": "0.1"
+            },
+            "Smoothing": "1",
+            "Smoothing_duration": "0.5",
+            "attachtransform": {
+                "#rotate_x": "null",
+                "#rotate_y": "null",
+                "#rotate_z": "null",
+                "#pos_x": "null",
+                "#pos_y": "null",
+                "#pos_z": "null"
+            },
+            "XRRigidObject": {
+                "value": "1",
+                "mass": "90",
+                "dragfriction": "10",
+                "angulardrag": "10",
+                "Isgravityenable": "true",
+                "IsKinematic": "0",
+                "CanInterpolate": "0",
+                "CollisionPolling": "discrete/continuous"
+            },
+            "aud_hasaudio": "0",
+            "aud_type": "null",
+            "aud_src": "null",
+            "aud_volume": "null",
+            "aud_PlayInloop": "null",
+            "aud_IsSurround": "null",
+            "aud_Dopplerlevel": "null",
+            "aud_spread": "null",
+            "aud_mindist": "null",
+            "aud_maxdist": "null",
+            "_Opttxt1": "null",
+            "@context_img_source": "null"
+        }
+
+        
+    ]
+}

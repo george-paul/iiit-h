@@ -1,0 +1,71 @@
+{
+	"animate_trigSync": {
+		"tsyncid": 31,
+		"tsOntrigger": true,
+		"SyncObjList": [
+			"_instrument1",
+			"_instrument2",
+			"_instrument3",
+			"_instrument4",
+			"_bodypart1",
+			"_bodypart2",
+			"_bodypart3",
+			"_bodypart4"
+		],
+		"tSyncNote": "Animate as per replay data"
+	},
+	"animate_nontrigSync": {
+		"ntsyncid": 32,
+		"ntsOntrigger": false,
+		"ntSyncObjList": [],
+		"ntSyncNote": "blank"
+	},
+	"animate_trigAsync": {
+		"tasyncid": 33,
+		"taOntrigger": true,
+		"AsyncObjList": [
+			"_bodypart1",
+			"_bodypart2",
+			"_bodypart3",
+			"_bodypart4"
+		],
+		"tAsyncNote": "Changes state when operated on"
+	},
+	"animate_nontrigAsync": {
+		"ntasyncid": 34,
+		"ntaOntrigger": false,
+		"ntAsyncObjList": [],
+		"ntAsyncNote": "blank"
+	},
+	"routine": [
+		{
+			"routeid": 11,
+			"starttime": "00:10:00",
+			"endtime": "01:00:00",
+			"order": [
+				31,
+				33,
+				32,
+				34
+			]
+		},
+		{
+			"routeid": 12,
+			"starttime": "00:30:00",
+			"endtime": "00:55:00",
+			"order": [
+				31,
+				33
+			]
+		},
+		{
+			"routeid": 13,
+			"starttime": "00:10:00",
+			"endtime": "00:40:00",
+			"order": [
+				32,
+				34
+			]
+		}
+	]
+}
