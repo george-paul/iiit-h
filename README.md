@@ -64,9 +64,9 @@ Classes began on 31 July 2023.
 
 **Courses:**
 
-- Topics in Nanoscience
+- Topics in Nanosciences
 - Data Foundation Systems
-- Information, Retrieval and Extraction
+- Information Retrieval and Extraction
 - Behavioural Research &  Experimental Design
 - Basics of Ethics
 - Honours Project 3
