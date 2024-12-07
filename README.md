@@ -67,6 +67,18 @@ Classes began on 31 July 2023.
 - Topics in Nanosciences
 - Data Foundation Systems
 - Information Retrieval and Extraction
-- Behavioural Research &  Experimental Design
+- Behavioural Research & Experimental Design
 - Basics of Ethics
 - Honours Project 3
+
+## Sem 4-2 spring24
+
+Classes began on 1-ish January 2024.
+
+**Courses:**
+
+- Honours Project 4
+- Internet and Democracy
+- Thinking through moral problems
+- Behavioral Research: Statistical Methods
+- Business Inteligence & Analytics (NPTEL)
