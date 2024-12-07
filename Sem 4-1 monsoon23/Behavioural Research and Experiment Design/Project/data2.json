@@ -1,0 +1,522 @@
+{
+  "scores": {
+    "3GqZ6jTgqwRFyKH5d9P6U3rGvxj2": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 3,
+          "t2": 8,
+          "t3": 7
+        }
+      }
+    },
+    "MCb6dopIorSFgZD11L4j1iN9ldn1": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 9,
+          "t2": 8,
+          "t3": 9
+        }
+      }
+    },
+    "V6XWpoEefHcCtMrfnmY0hw8Hgkh2": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 7,
+          "t2": 8,
+          "t3": 7
+        }
+      }
+    },
+    "VaMp03ELTCODOGPOsmPotb57oRe2": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 7,
+          "t2": 8,
+          "t3": 8
+        }
+      }
+    },
+    "b78AmWycmRMALoCcxZLrQSBIHx63": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 7,
+          "t2": 4,
+          "t3": 9
+        }
+      }
+    },
+    "sxKXRiqU2RRLqhodOTwArWJxCcF2": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 6,
+          "t2": 9,
+          "t3": 8
+        }
+      }
+    },
+    "zkRekuSXSQeF7JltoECk4RdHNK62": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 2,
+          "t2": 6,
+          "t3": 6
+        }
+      }
+    },
+    "6OMWicS2uWZWasBibulnnIKN7tno": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 5,
+          "t2": 8,
+          "t3": 7
+        }
+      }
+    },
+    "1quZdxJfgYn51wrxV5iIwhsaPpaX": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 4,
+          "t2": 9,
+          "t3": 7
+        }
+      }
+    },
+    "Pmyb2265jKWjyo2VLnYlglCClAW0": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 6,
+          "t2": 8,
+          "t3": 7
+        }
+      }
+    },
+    "fjVrsJw8HckXH5rNxKI69FFKRBoI": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 8,
+          "t2": 9,
+          "t3": 7
+        }
+      }
+    },
+    "zexGSNI4wiWx5k1vhdN0SQTCgLNO": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 2,
+          "t2": 7,
+          "t3": 8
+        }
+      }
+    },
+    "YxgFANyA6ujP1aVQohFW7W6WlWAo": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 1,
+          "t2": 9,
+          "t3": 8
+        }
+      }
+    },
+    "4v96WFnWYxqrbPtC9qxzVXGCGj7w": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 4,
+          "t2": 9,
+          "t3": 8
+        }
+      }
+    },
+    "74ad3Gdk4TtmYyRN41kL56LAiq2n": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 10,
+          "t2": 7,
+          "t3": 9
+        }
+      }
+    },
+    "sVz2DBcFSkcLfNsXBT2RxZSPiSWP": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 1,
+          "t2": 8,
+          "t3": 9
+        }
+      }
+    },
+    "kU1vhW5z35and34p4TzbqpgcKHQi": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 3,
+          "t2": 9,
+          "t3": 8
+        }
+      }
+    },
+    "3owQeplwWrpNH7uMQ5MW2VWZQyFA": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 6,
+          "t2": 9,
+          "t3": 5
+        }
+      }
+    },
+    "l6POOzUEQAF2du1n8avhCYGaPk1P": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 7,
+          "t2": 7,
+          "t3": 9
+        }
+      }
+    },
+    "4FgUVJl82b0bxSGEIyMjzYHIpYHm": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 7,
+          "t2": 8,
+          "t3": 8
+        }
+      }
+    },
+    "eG1vmeusWcsrfeBU3GFqBYrSCk7D": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 1,
+          "t2": 4,
+          "t3": 9
+        }
+      }
+    },
+    "brDCFI7BD3aivx9DeX04bdXvV3Ks": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 8,
+          "t2": 8,
+          "t3": 7
+        }
+      }
+    },
+    "RcP9bfu2xcIZHkS5XEQHZkXyfI5k": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 4,
+          "t2": 4,
+          "t3": 7
+        }
+      }
+    },
+    "ynLEu1BARKYSF7y0hJ17mxckitJW": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 3,
+          "t2": 7,
+          "t3": 8
+        }
+      }
+    },
+    "89cMZ7YDhynh6JvdXZNRplLwsQjx": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 5,
+          "t2": 7,
+          "t3": 7
+        }
+      }
+    },
+    "ApeRr3DbMWdxsCPBxvyCDUOVJoT1": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 2,
+          "t2": 8,
+          "t3": 9
+        }
+      }
+    },
+    "Oa3awN48wkYewXOpUho1pz1eho8Z": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 2,
+          "t2": 8,
+          "t3": 10
+        }
+      }
+    },
+    "JGQkK0ulGccfhmpGb7EU2c69iXAV": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 3,
+          "t2": 8,
+          "t3": 7
+        }
+      }
+    },
+    "O1E8DBIdUZYZw8fe38ocxKgZVd2V": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 5,
+          "t2": 4,
+          "t3": 6
+        }
+      }
+    },
+    "RBh49X2InzddcFe8JLx4IZWg6Vd1": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 6,
+          "t2": 7,
+          "t3": 7
+        }
+      }
+    },
+    "3vlxUvRyV38nBUsox8YthocuXBBR": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 8,
+          "t2": 8,
+          "t3": 8
+        }
+      }
+    },
+    "hdizhKnpXlseKgVP8emgmkUNE5x0": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 8,
+          "t2": 8,
+          "t3": 8
+        }
+      }
+    },
+    "NF147TvH8OzNhUJjHL31jrzs6hsB": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 6,
+          "t2": 8,
+          "t3": 8
+        }
+      }
+    },
+    "CAptRY8r8BdTAcBKDjuSCMLlroe2": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 4,
+          "t2": 7,
+          "t3": 7
+        }
+      }
+    },
+    "OO70rg0KBmzNUxWF6apelngn110V": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 7,
+          "t2": 8,
+          "t3": 7
+        }
+      }
+    },
+    "UAiJJ1UffuOEvXM0Ur8Qw1b2nDB5": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 6,
+          "t2": 8,
+          "t3": 8
+        }
+      }
+    },
+    "qs9D3AIn3wHloiyb0z4ZPgigzTrn": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 9,
+          "t2": 8,
+          "t3": 9
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+---
+title: "Assignment2"
+author: "George Paul"
+date: "2024-01-25"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list = setdiff(ls(), lsf.str()))
+```
+
+# Question 1
+
+```{r}
+q1mean <- 100
+q1sd <- 15
+
+meansamplex <- function(x) {
+  mean(rnorm(x, mean=q1mean, sd=q1sd))
+}
+
+sdsamplex <- function(x) {
+  sd(rnorm(x, mean=q1mean, sd=q1sd))
+}
+
+genMeanTrials <- function(trials, x) {
+  df <- data.frame(matrix(ncol = 2, nrow = 0))
+  colnames(df) <- c("Index", "Mean")
+  
+  for(i in 1:1000) {
+    df <- rbind(df, c(i, mean(rnorm(x, mean=q1mean, sd=q1sd))))
+  }
+  df
+}
+
+genSDTrials <- function(trials, x) {
+  df <- data.frame(matrix(ncol = 2, nrow = 0))
+  colnames(df) <- c("Index", "Mean")
+  
+  for(i in 1:1000) {
+    df <- rbind(df, c(i, sd(rnorm(x, mean=q1mean, sd=q1sd))))
+  }
+  df
+}
+```
+
+```{r}
+hist(genMeanTrials(1000, 10)[, c(2)])
+```
+
+```{r}
+hist(genMeanTrials(1000, 50)[, c(2)])
+```
+
+```{r}
+hist(genMeanTrials(1000, 100)[, c(2)])
+```
+
+```{r}
+hist(genMeanTrials(1000, 500)[, c(2)])
+```
+
+```{r}
+
+hist(genMeanTrials(1000, 1500)[, c(2)])
+```
+
+```{r}
+hist(genSDTrials(1000, 10)[, c(2)])
+```
+
+```{r}
+hist(genSDTrials(1000, 50)[, c(2)])
+```
+
+```{r}
+hist(genSDTrials(1000, 100)[, c(2)])
+```
+
+```{r}
+hist(genSDTrials(1000, 500)[, c(2)])
+```
+
+```{r}
+hist(genSDTrials(1000, 1500)[, c(2)])
+```
+
+As the number of sampled number increases, the means of the histograms approach the actual mean and standard deviations supplied to the sampling functions.
+
+# Question 2
+
+```{r}
+q2a <- 2
+q2b<- 5
+
+genMeanTrials <- function(trials, x) {
+  df <- data.frame(matrix(ncol = 2, nrow = 0))
+  colnames(df) <- c("Index", "Mean")
+  
+  for(i in 1:1000) {
+    df <- rbind(df, c(i, mean(rbeta(x, shape1=q2a, shape2=q2b))))
+  }
+  df
+}
+
+genSDTrials <- function(trials, x) {
+  df <- data.frame(matrix(ncol = 2, nrow = 0))
+  colnames(df) <- c("Index", "Mean")
+  
+  for(i in 1:1000) {
+    df <- rbind(df, c(i, sd(rbeta(x, shape1=q2a, shape2=q2b))))
+  }
+  df
+}
+
+print("Expected mean:")
+(q2a)/(q2a+q2b) # 0.2857143
+print("Expected SD:")
+((q2a * q2b) / (((q2a + q2b)^2) * (q2a + q2b + 1)))^(1/2) # 0.1597191
+
+```
+
+```{r}
+hist(genMeanTrials(1000, 10)[, c(2)])
+```
+
+```{r}
+hist(genMeanTrials(1000, 50)[, c(2)])
+```
+
+```{r}
+hist(genMeanTrials(1000, 100)[, c(2)])
+```
+
+```{r}
+hist(genMeanTrials(1000, 500)[, c(2)])
+```
+
+```{r}
+
+hist(genMeanTrials(1000, 1500)[, c(2)])
+```
+
+```{r}
+hist(genSDTrials(1000, 10)[, c(2)])
+```
+
+```{r}
+hist(genSDTrials(1000, 50)[, c(2)])
+```
+
+```{r}
+hist(genSDTrials(1000, 100)[, c(2)])
+```
+
+```{r}
+hist(genSDTrials(1000, 500)[, c(2)])
+```
+
+```{r}
+hist(genSDTrials(1000, 1500)[, c(2)])
+```
+
+**Expected mean:** 0.1597191
+
+**Expected SD:** 0.2857143
+
+Similar to the normal distribution, the more sample numbers are considered, the closer the means of the trials come to the expected mean and SD of the Beta distribution. Although, more trials are required to bring about the same degree of convergence.

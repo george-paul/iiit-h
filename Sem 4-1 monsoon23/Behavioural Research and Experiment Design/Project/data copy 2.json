@@ -1,0 +1,263 @@
+{
+  "scores": {
+    "3GqZ6jTgqwRFyKH5d9P6U3rGvxj2": {
+      "linebisection": {
+        "2023-11-23T00:02:58": {
+          "errorCount": 1,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-23T00:07:45": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": 9,
+          "t1": 3,
+          "t2": 8,
+          "t3": 7,
+          "totalLearning": 18
+        }
+      }
+    },
+    "MCb6dopIorSFgZD11L4j1iN9ldn1": {
+      "linebisection": {
+        "2023-11-23T00:31:45": {
+          "errorCount": 0,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-23T00:37:45": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": -1,
+          "t1": 9,
+          "t2": 8,
+          "t3": 9,
+          "totalLearning": 26
+        }
+      }
+    },
+    "V6XWpoEefHcCtMrfnmY0hw8Hgkh2": {
+      "linebisection": {
+        "2023-11-22T23:29:57": {
+          "errorCount": 0,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-22T23:36:09": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": 1,
+          "t1": 7,
+          "t2": 8,
+          "t3": 7,
+          "totalLearning": 22
+        }
+      }
+    },
+    "VaMp03ELTCODOGPOsmPotb57oRe2": {
+      "linebisection": {
+        "2023-11-22T23:21:12": {
+          "errorCount": 0,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-22T23:25:58": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": 2,
+          "t1": 7,
+          "t2": 8,
+          "t3": 8,
+          "totalLearning": 23
+        }
+      }
+    },
+    "b78AmWycmRMALoCcxZLrQSBIHx63": {
+      "linebisection": {
+        "2023-11-22T23:55:04": {
+          "errorCount": 0,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-22T23:59:33": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": 4,
+          "t1": 7,
+          "t2": 9,
+          "t3": 9,
+          "totalLearning": 25
+        }
+      }
+    },
+    "sxKXRiqU2RRLqhodOTwArWJxCcF2": {
+      "linebisection": {
+        "2023-11-23T00:20:32": {
+          "errorCount": 0,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-23T00:26:34": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": 5,
+          "t1": 6,
+          "t2": 9,
+          "t3": 8,
+          "totalLearning": 23
+        }
+      }
+    },
+    "zkRekuSXSQeF7JltoECk4RdHNK62": {
+      "linebisection": {
+        "2023-11-23T01:09:01": {
+          "errorCount": 1,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-23T01:14:20": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": 8,
+          "t1": 2,
+          "t2": 6,
+          "t3": 6,
+          "totalLearning": 14
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+---
+title: "Assignment1"
+author: "George Paul"
+date: "2024-01-22"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# install.packages('readxl')
+library(readxl)
+
+# install.packages("vioplot")
+library("vioplot")
+
+# install.packages("ggplot2")
+library(ggplot2)
+```
+
+```{r}
+rm(list = setdiff(ls(), lsf.str()))
+```
+
+```{r}
+excel_path <- 'D:\\FILES\\BRSMa1.xlsx'
+```
+
+# Question 1
+
+```{r}
+q1data <- read_excel(excel_path)
+q1data
+```
+
+```{r}
+boxplot(q1data)
+```
+
+```{r}
+vioplot(q1data)
+```
+
+```{r}
+plot(q1data$x1, type = "l") +
+  lines(q1data$x2, type = "l", col = "red") +
+  lines(q1data$x3, type = "l", col = "green") +
+  lines(q1data$x4, type = "l", col = "blue")
+
+```
+
+The box plot for this data is entirely misleading - showing the same plots for all data groups.
+
+The violin plot does away with most problems giving a much better idea of the distributions but perhaps x1 and x3 seem too similar even though they are very different.
+
+The line plot is also a valid method of showing the data since the data seems to be of a somewhat continuous nature and does away with the problems of the violin plot.
+
+# Question 2
+
+```{r}
+q2data <- read_excel(excel_path, sheet = "Movement Personality Results")
+q2data
+```
+
+```{r}
+mosaicplot(as.data.frame(t(q2data)), main = "Personality and Motion", color = "plum", las = 2, cex.axis = 0.5)
+```
+
+```{r}
+plot(q2data$Openness, type = "o",col = "blue", xlab = "Joints", ylab = "Jointimportance values", main = "Personality and Motion") + 
+lines(q2data$Conscientiousness, col="red") + 
+lines(q2data$Extraversion, col="green") + 
+lines(q2data$Agreeableness, col="yellow") +
+lines(q2data$Neuroticism, col="purple")
+
+```
+
+Since we want to know how much each joint's value contributes to that personality trait, a mosaic plot with tiles scaled according to contribution is a great choice
+
+An inferior way to present this data is shown above as a line plot. The data is not continuous nor does it show the relation each point will have with their counterparts in the same joint or personality trait.
+
+# Question 3.1
+
+```{r}
+q31labels <- c("Zombie Males", "Safe Males", "Zombie Females", "Safe Females")
+q31colors <- c("steelblue4", "steelblue1", "violetred4", "violetred1")
+q31.1 <- c(118, 62, 4,141)
+pie(q31.1, labels = q31labels, col = q31colors, main="Safe Zone")
+```
+
+```{r}
+q31.2 <- c(154, 25, 13, 93)
+pie(q31.2, labels = q31labels, col = q31colors, main="Contaminated City")
+```
+
+```{r}
+q31.3 <- c(422, 88, 106, 90)
+pie(q31.3, labels = q31labels, col = q31colors, main="Rural Area")
+```
+
+```{r}
+q31.4 <- c(670, 192, 3, 20)
+pie(q31.4, labels = q31labels, col = q31colors, main="Isolated Island")
+```
+
+Pie charts can easily show you the fraction of people that survived in each zone and importantly, also the relation between being male or female in that zone.
+
+# Question 3.2
+
+```{r}
+q32data <- read_excel(excel_path, sheet = 3)[c("RI", "Type")]
+boxplot(q32data$RI ~ q32data$Type)
+```

@@ -1,0 +1,158 @@
+---
+title: "Assignment3"
+author: "George Paul"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list = setdiff(ls(), lsf.str()))
+```
+
+```{r}
+# install.packages('readxl')
+library(readxl)
+```
+
+```{r}
+# install.packages('ggplot2')
+library(ggplot2)
+```
+
+```{r}
+# install.packages('reshape2')
+library(reshape2)
+```
+
+```{r}
+# install.packages('stats')
+library(stats)
+```
+
+```{r}
+# install.packages('psych')
+library(psych)
+```
+
+## Question 1
+
+```{r}
+excel_path <- 'C:\\SSDFiles\\GitStuff\\iiith\\Sem 4-2 spring24\\Behavioural Research - Statistical Methods\\Assgn3\\wine.xlsx'
+with_target_data <- read_excel(excel_path)
+with_target_data
+data <- with_target_data[, c("Alcohol","Malic","Ash","Alcalinity","Magnesium","Phenols","Flavanoids","Nonflavanoids","Proanthocyanins","Color","Hue","Dilution","Proline")]
+data
+```
+
+## Question 2
+
+#### Question 2.1
+
+```{r}
+correlation_matrix <- cor(data)
+correlation_matrix
+melted_data <- melt(correlation_matrix)
+ggplot(melted_data, aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient(low = "white", high = "darkorange", name = "Correlation") + 
+  labs(title = "Correlation Heatmap", x = "Features", y = "Features") +  
+  theme_classic() +  
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+# heatmap(correlation_matrix)
+```
+
+#### Question 2.2
+
+```{r}
+parallel_results <- fa.parallel(data)
+```
+
+Parallel analysis suggests that the number of factors = 3 and the number of components = 3
+
+#### Question 2.3
+
+```{r}
+scaled_data <- scale(data)
+scaled_data
+pca_results <- prcomp(data, scale. = TRUE)
+pca_results
+
+explained_variance <- pca_results$sdev^2 / sum(pca_results$sdev^2)
+explained_variance[0:3]
+
+pca_transformed_data <- scaled_data %*% pca_results$rotation[, 1:2]
+```
+
+Proportion of variance explained by the first three components: 0.3619885, 0.1920749, 0.1112363
+
+```{r}
+type_data <- with_target_data[,1]
+type_data
+pca_data_withtype <- cbind(type_data, pca_transformed_data)
+pca_data_withtype
+plot(pca_data_withtype$PC1, pca_data_withtype$PC2, col=pca_data_withtype$Type)
+```
+
+## Question 3
+
+#### Question 3.1
+
+-   *Null Hypothesis* ($H_0$) is "The observed distribution of wine types does not significantly differ from an equal distribution among the three types"
+-   *Alternative Hypothesis* ($H_A$) is "The observed distribution of wine types significantly differ from an equal distribution among the three types"
+
+#### Question 3.2
+
+```{r}
+observed_freq <- table(type_data)
+
+n <- length(type_data)
+expected_freq <- rep(n / length(observed_freq), length(observed_freq))
+
+expected_freq
+
+chi_sq_test <- chisq.test(observed_freq, p = expected_freq)
+chi_sq_test
+```
+
+#### Question 3.3
+
+\$\text{p-value} = 0.1075 \gt 0.05 = \alpha \$ Since p-value is greater than $\alpha$, the *Null hypothesis* ($H_0$) *can't* be rejected. The chi-square statistic can also be compared with the critical value received from a chi-square distribution table, keeping in mind that $\text{df} = 2$. That critical value is $5.991$. This value, since it's greater than the calculated $\chi^2$ statistic, *does not show* statistical significance.
+
+## Question 4
+
+#### Question 4.1 and 4.2
+
+```{r}
+feature <- with_target_data$Alcohol
+quantiles <- quantile(feature, probs = c(1/3, 2/3))
+
+# Step 2: Categorize each row based on which third it belongs to
+third_category <- cut(feature, breaks = c(-Inf, quantiles, Inf), labels = c("Bottom Third", "Middle Third", "Top Third"))
+
+# Step 3: Create a contingency table
+contingency_table <- table(with_target_data$Type, third_category)
+
+# Display the contingency table
+contingency_table
+```
+
+#### Question 4.3
+
+-   *Null Hypothesis* ($H_0$) is "The wine type is independent of its alcohol content"
+-   *Alternative Hypothesis* ($H_A$) is "the wine type is dependent on its alcohol content"
+
+#### Question 4.4
+
+```{r}
+chisq.test(contingency_table)
+```
+
+#### Question 4.5
+
+\$\text{p-value} = 2.2\mathrm{e}{-16} \gt 0.05 = \alpha \$ Since p-value is greater than $\alpha$, the *Null hypothesis* ($H_0$) *can* be rejected. Similar to the above analysis, the chi-square statistic can also be compared with the critical value from a chi-square distribution table for $\text{df} = 4$. That critical value is $9.488$. This value, since it's lesser than the calculated $\chi^2$ statistic, *shows* statistical significance.

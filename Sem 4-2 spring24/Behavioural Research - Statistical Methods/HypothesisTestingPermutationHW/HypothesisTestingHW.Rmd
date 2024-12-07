@@ -1,0 +1,43 @@
+---
+title: "Hypothesis Testing Homework Problem"
+author: "George Paul"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list = setdiff(ls(), lsf.str()))
+```
+
+```{r}
+# install.packages('readxl')
+library(readxl)
+```
+
+```{r}
+excel_path <- 'D:\\FILES\\BRSMHypDataset.xlsx'
+```
+
+```{r}
+qdata <- read_excel(excel_path)
+qdata
+```
+
+```{r}
+split_data <- split(qdata, qdata$GPA...2 < 7)
+split_data
+lt7data <- split_data[["TRUE"]]
+gt7data <- split_data[["FALSE"]]
+```
+
+```{r}
+# "Placement \r\nTESTSCORE"
+t_test_result <- t.test(lt7data$"Placement \r\nTESTSCORE", gt7data$"Placement \r\nTESTSCORE")
+t_test_result
+```
+
+Considering the standard value for $\alpha = 0.05$ when evaluating at p-values, the calculated p-value is $0.0001357$ which is \< $\alpha$. With this we can conclude that the test is statistically significant and that students with a $GPA \leq 7$ have lower $placement TESTSCORES$ than those with a $GPA>7$.

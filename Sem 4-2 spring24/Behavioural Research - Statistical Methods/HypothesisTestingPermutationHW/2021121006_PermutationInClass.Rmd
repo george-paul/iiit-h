@@ -1,0 +1,159 @@
+---
+title: "BRSM Results Analysis"
+author: "George Paul"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list = setdiff(ls(), lsf.str()))
+```
+
+```{r}
+# install.packages('readxl')
+library(readxl)
+```
+
+```{r}
+excel_path <- 'D:\\FILES\\BRSM_Results Visualization.xlsx'
+data <- read_excel(excel_path)
+data
+nums <- data[["No. of Mosquitoes"]]
+nums
+grps <- data[["Group"]]
+grps
+count_b <- sum(grps == "Beer")
+count_b
+count_w <- sum(grps == "Water")
+count_w
+beer_list <- subset(data, Group == "Beer")
+beer_list
+watr_list <- subset(data, Group == "Water")
+obs_stat_med <- median(beer_list$`No. of Mosquitoes`) - median(watr_list$`No. of Mosquitoes`)
+obs_stat_med
+obs_stat_t <- t.test(watr_list$`No. of Mosquitoes`, beer_list$`No. of Mosquitoes`)
+as.double(obs_stat_t$statistic)
+```
+
+## Question 2.a
+
+```{r}
+get_group_median_diff <- function() {
+  beer_sample <- sample(nums, count_b, replace = TRUE)
+  watr_sample <- sample(nums, count_w, replace =TRUE)
+  median(beer_sample) - median(watr_sample)
+}
+get_group_median_diff()
+```
+
+```{r}
+counter <- 0
+iter_count <-10000 
+
+medians <- c()
+
+repeat {
+  medians <- c(medians, get_group_median_diff())
+
+  counter <- counter + 1
+  if (counter >= iter_count) {
+    break
+  }
+}
+
+plot(hist(medians, main = "Median of Beer sample - Median of Water sample"))+
+abline(v = obs_stat_med, col = "red", lty = 2)
+```
+
+```{r}
+p_val_qa <- sum(medians >= obs_stat_med) / length(medians)
+p_val_qa
+```
+
+The calculated p-value is: $\frac{\text{Number of values where val }\ge\text{ Observed Statistic}}{\text{Total Number of values}}$
+
+This was calculated to be $\text{p-value} \approx 0.01 < \alpha$ . Hence we can conclude that it is statistically significant.
+
+#### 2.c for (a) step statistic
+
+```{r}
+p_val_qa_nondir <- (sum(medians >= obs_stat_med) + sum(medians <= -obs_stat_med)) / length(medians)
+p_val_qa_nondir
+```
+
+The calculated p-value for non-directional hypothesis is: $\frac{\text{Number of values where val }\ge\text{ Observed Statistic} + \text{Number of values where val }\le(-\text{ Observed Statistic})}{\text{Total Number of values}}$
+
+This was calculated to be $\text{p-value} \approx 0.02 < \alpha$ . Hence we can conclude that it is statistically significant.
+
+## Question 2.b
+
+```{r}
+get_group_t <- function() {
+  beer_sample <- sample(nums, count_b, replace = TRUE)
+  watr_sample <- sample(nums, count_w, replace =TRUE)
+  as.double(t.test(beer_sample, watr_sample)$statistic)
+}
+get_group_t()
+```
+
+```{r}
+counter <- 0
+iter_count <-10000 
+
+ts <- c()
+
+repeat {
+  ts <- c(ts, get_group_t())
+
+  counter <- counter + 1
+  if (counter >= iter_count) {
+    break
+  }
+}
+
+plot(hist(ts, main = "T statistic"))
+# abline(v = obs_stat_t, col = "red", lty = 2)
+```
+
+## Question 3
+
+```{r}
+excel_path <- 'D:\\FILES\\iqdata.xlsx'
+data <- read_excel(excel_path)
+data
+```
+
+```{r}
+sco_list <- data$`Placement \r\nTESTSCORE`
+iqs_list <- data$IQ
+original_corr <- cor(sco_list, iqs_list)
+original_corr
+```
+
+```{r}
+counter <- 0
+iter_count <-10000 
+
+corrs <- c()
+
+repeat {
+  shuff_sco_list <- sco_list[sample(length(sco_list))]
+  shuff_iqs_list <- iqs_list[sample(length(iqs_list))]
+  cor(shuff_sco_list, shuff_iqs_list)
+  corrs <- c(corrs, cor(shuff_sco_list, shuff_iqs_list))
+
+  counter <- counter + 1
+  if (counter >= iter_count) {
+    break
+  }
+}
+
+plot(hist(corrs, main = "Correlation bootstrap distribution"))+
+abline(v = original_corr, col = "red", lty = 2)
+```
+
+As it stands in the latest simulation, the originally calculated correlation is beyond the range of any of the randomly generated data. Hence the calculated p-value will be $\approx 0 \le \alpha = 0.05$ . We can conclude that the correlation that was found was statistically quite significant.

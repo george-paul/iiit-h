@@ -1,0 +1,102 @@
+{
+  "scores": {
+    "3GqZ6jTgqwRFyKH5d9P6U3rGvxj2": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 3,
+          "t2": 8,
+          "t3": 7
+        }
+      }
+    },
+    "MCb6dopIorSFgZD11L4j1iN9ldn1": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 9,
+          "t2": 8,
+          "t3": 9
+        }
+      }
+    },
+    "V6XWpoEefHcCtMrfnmY0hw8Hgkh2": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 7,
+          "t2": 8,
+          "t3": 7
+        }
+      }
+    },
+    "VaMp03ELTCODOGPOsmPotb57oRe2": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 7,
+          "t2": 8,
+          "t3": 8
+        }
+      }
+    },
+    "b78AmWycmRMALoCcxZLrQSBIHx63": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 7,
+          "t2": 9,
+          "t3": 9
+        }
+      }
+    },
+    "sxKXRiqU2RRLqhodOTwArWJxCcF2": {
+      "linebisection": {
+        "0": {
+          "errorCount": 0
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 6,
+          "t2": 9,
+          "t3": 8
+        }
+      }
+    },
+    "zkRekuSXSQeF7JltoECk4RdHNK62": {
+      "linebisection": {
+        "0": {
+          "errorCount": 1
+        }
+      },
+      "verballearning": {
+        "0": {
+          "t1": 2,
+          "t2": 6,
+          "t3": 6
+        }
+      }
+    }
+  }
+}

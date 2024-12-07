@@ -1,0 +1,394 @@
+{
+  "scores": {
+    "3GqZ6jTgqwRFyKH5d9P6U3rGvxj2": {
+      "linebisection": {
+        "2023-11-23T00:02:58": {
+          "errorCount": 1,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-23T00:07:45": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": 9,
+          "t1": 3,
+          "t2": 8,
+          "t3": 7,
+          "totalLearning": 18
+        }
+      }
+    },
+    "I7iHsWWnxXNLxRpjBkbvyhYvv6h2": {
+      "picturenaming": {
+        "2022-12-04T11:02:44": [
+          "ER: ",
+          "ER: ",
+          "ER: ",
+          "ER: "
+        ]
+      },
+      "trailmaking": {
+        "2022-11-09T14:56:11": [
+          24099,
+          95789,
+          30060
+        ],
+        "2022-11-09T15:06:14": [
+          12501,
+          65382,
+          51571,
+          191708
+        ],
+        "2022-11-16T14:42:53": [
+          86018,
+          98055,
+          31349,
+          164696
+        ],
+        "2022-11-18T00:10:32": [
+          14096,
+          38956,
+          20263,
+          74828
+        ]
+      }
+    },
+    "MCb6dopIorSFgZD11L4j1iN9ldn1": {
+      "linebisection": {
+        "2023-11-23T00:31:45": {
+          "errorCount": 0,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-23T00:37:45": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": -1,
+          "t1": 9,
+          "t2": 8,
+          "t3": 9,
+          "totalLearning": 26
+        }
+      }
+    },
+    "V6XWpoEefHcCtMrfnmY0hw8Hgkh2": {
+      "linebisection": {
+        "2023-11-22T23:29:57": {
+          "errorCount": 0,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-22T23:36:09": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": 1,
+          "t1": 7,
+          "t2": 8,
+          "t3": 7,
+          "totalLearning": 22
+        }
+      }
+    },
+    "VaMp03ELTCODOGPOsmPotb57oRe2": {
+      "linebisection": {
+        "2023-11-22T23:21:12": {
+          "errorCount": 0,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-22T23:25:58": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": 2,
+          "t1": 7,
+          "t2": 8,
+          "t3": 8,
+          "totalLearning": 23
+        }
+      }
+    },
+    "b78AmWycmRMALoCcxZLrQSBIHx63": {
+      "linebisection": {
+        "2023-11-22T23:55:04": {
+          "errorCount": 0,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-22T23:59:33": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": 4,
+          "t1": 7,
+          "t2": 9,
+          "t3": 9,
+          "totalLearning": 25
+        }
+      }
+    },
+    "fuVJif7l4DcPUkWweOUgAgUza6g1": {
+      "picturenaming": {
+        "2022-12-12T13:10:35": [
+          "ER: CHICKEN",
+          "3 : MONKEY",
+          "ER: TORTOISE",
+          "3 : PINEAPPLE"
+        ]
+      },
+      "trailmaking": {
+        "2022-11-16T13:42:50": [
+          4832,
+          16781,
+          6410,
+          83059
+        ]
+      }
+    },
+    "sxKXRiqU2RRLqhodOTwArWJxCcF2": {
+      "linebisection": {
+        "2023-11-23T00:20:32": {
+          "errorCount": 0,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-23T00:26:34": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": 5,
+          "t1": 6,
+          "t2": 9,
+          "t3": 8,
+          "totalLearning": 23
+        }
+      }
+    },
+    "ttiQwnbmpkY5AlUeL1xCCzHQKl12": {
+      "picturenaming": {
+        "2022-12-27T13:17:01": [
+          "ER: CHICKEN",
+          "3 : MONKEY",
+          "3 : TURTLE",
+          "3 : PINEAPPLE"
+        ]
+      }
+    },
+    "zkRekuSXSQeF7JltoECk4RdHNK62": {
+      "linebisection": {
+        "2023-11-23T01:09:01": {
+          "errorCount": 1,
+          "errors": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true
+          ]
+        }
+      },
+      "verballearning": {
+        "2023-11-23T01:14:20": {
+          "delayedRecall": 0,
+          "delayedRecognition": 10,
+          "learningOverTrials": 8,
+          "t1": 2,
+          "t2": 6,
+          "t3": 6,
+          "totalLearning": 14
+        }
+      }
+    }
+  },
+  "users": {
+    "3GqZ6jTgqwRFyKH5d9P6U3rGvxj2": {
+      "createdTime": "2023-11-23T00:01:46",
+      "id": "3GqZ6jTgqwRFyKH5d9P6U3rGvxj2",
+      "name": "nukit",
+      "phNo": "+919109942069"
+    },
+    "I7iHsWWnxXNLxRpjBkbvyhYvv6h2": {
+      "createdTime": "2022-11-09T14:35:41",
+      "id": "I7iHsWWnxXNLxRpjBkbvyhYvv6h2",
+      "name": "bhaktee",
+      "phNo": "+918451940558"
+    },
+    "MCb6dopIorSFgZD11L4j1iN9ldn1": {
+      "createdTime": "2023-11-23T00:29:33",
+      "id": "MCb6dopIorSFgZD11L4j1iN9ldn1",
+      "name": "Aditya Nair",
+      "phNo": "+919892629757"
+    },
+    "V6XWpoEefHcCtMrfnmY0hw8Hgkh2": {
+      "createdTime": "2023-11-22T23:28:58",
+      "id": "V6XWpoEefHcCtMrfnmY0hw8Hgkh2",
+      "name": "Rohan",
+      "phNo": "+919505905000"
+    },
+    "VaMp03ELTCODOGPOsmPotb57oRe2": {
+      "createdTime": "2023-11-22T23:17:54",
+      "id": "VaMp03ELTCODOGPOsmPotb57oRe2",
+      "name": "joel",
+      "phNo": "+918590377034"
+    },
+    "b78AmWycmRMALoCcxZLrQSBIHx63": {
+      "createdTime": "2023-11-22T23:51:49",
+      "id": "b78AmWycmRMALoCcxZLrQSBIHx63",
+      "name": "Adith John Rajeev",
+      "phNo": "+919110266002"
+    },
+    "fuVJif7l4DcPUkWweOUgAgUza6g1": {
+      "createdTime": "2022-11-16T10:55:09",
+      "id": "fuVJif7l4DcPUkWweOUgAgUza6g1",
+      "name": "test",
+      "phNo": "+911234567890"
+    },
+    "iDXiHvUpZrdVXwjU4QLf3KhBoXh2": {
+      "createdTime": "2023-09-08T18:21:00",
+      "id": "iDXiHvUpZrdVXwjU4QLf3KhBoXh2",
+      "name": "gabi ",
+      "phNo": "+917339599165"
+    },
+    "sxKXRiqU2RRLqhodOTwArWJxCcF2": {
+      "createdTime": "2023-11-23T00:19:04",
+      "id": "sxKXRiqU2RRLqhodOTwArWJxCcF2",
+      "name": "ankith Varun ",
+      "phNo": "+919964076968"
+    },
+    "ttiQwnbmpkY5AlUeL1xCCzHQKl12": {
+      "createdTime": "2022-12-27T13:14:32",
+      "id": "ttiQwnbmpkY5AlUeL1xCCzHQKl12",
+      "name": "Soman",
+      "phNo": "+918921808499"
+    },
+    "zkRekuSXSQeF7JltoECk4RdHNK62": {
+      "createdTime": "2023-11-23T01:07:04",
+      "id": "zkRekuSXSQeF7JltoECk4RdHNK62",
+      "name": "Amal",
+      "phNo": "+918086967975"
+    }
+  }
+}

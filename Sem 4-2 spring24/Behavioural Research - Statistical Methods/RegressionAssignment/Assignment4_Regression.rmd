@@ -1,0 +1,85 @@
+---
+title: "Regression Assignment"
+author: "George Paul"
+date: "04/4/2024"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+```{r}
+rm(list = setdiff(ls(), lsf.str()))
+```
+
+```{r}
+# install.packages("reshape")
+library("reshape")
+```
+
+```{r}
+# install.packages("ggplot2")
+library("ggplot2")
+```
+
+```{r}
+# install.packages("GGally")
+library("GGally")
+```
+
+# Practice
+
+copy and paste your work by following each example from the lab manual for this exercise
+
+```{r}
+setwd("C:/SSDFiles/GitStuff/iiith/Sem 4-2 spring24/Behavioural Research - Statistical Methods/RegressionAssignment") # change this to your working directory where you've put the data files, etc for this session
+# setwd("~/Desktop/Work/BRSM_SP23/Lab")
+
+# Simulate data y <- b1x1 + b2x2 + b0 with Normally distributed residuals. You can assume sensible values for b1 b2 b0 as you please. 
+dat<-read.csv("housing.csv")
+houselm <- lm(dat$median_house_value ~ dat$total_rooms + dat$median_income)
+
+summary(houselm)
+
+```
+
+```{r}
+# Binary 
+mydata<-read.csv("binary.csv")
+mydata$rank <- factor(mydata$rank)
+fit <- glm(admit ~ gre + gpa + rank, data = mydata, family = "binomial")
+
+summary(fit) # display results
+confint(fit) # 95% CI for the coefficients
+exp(coef(fit)) # exponentiated coefficients
+exp(confint(fit)) # 95% CI for exponentiated coefficients
+predict(fit, type="response") # predicted values
+residuals(fit, type="deviance") # residuals
+```
+
+# Assignment 4 exercises
+
+### Part 1
+
+```{r}
+nocat_dat <- dat[,0:9]
+# nocat_dat
+```
+
+```{r}
+ggpairs(nocat_dat)
+```
+
+```{r}
+
+```
+
+# Written answers
+
+Write your answer here.

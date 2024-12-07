@@ -1,0 +1,57 @@
+---
+title: "PValue Adjustment"
+author: "George Paul"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list = setdiff(ls(), lsf.str()))
+```
+
+```{r}
+# install.packages('readxl')
+library(readxl)
+```
+
+```{r}
+data <- c(0.005,0.001,0.01,0.0005,0.0009,0.04,0.056,0.05,0.048,0.013,0.037,0.043,0.002,0.025,0.11,0.07,0.08)
+data <- sort(data)
+x <- seq(0, length(data)-1)
+```
+
+```{r}
+plot(data ~ x, type = "o")
+```
+
+```{r}
+bonf <- p.adjust(data, "bonferroni")
+plot(bonf ~ x, type = "o")
+```
+
+```{r}
+bh <- p.adjust(data, "BH")
+plot(bh ~ x, type = "o")
+```
+
+```{r}
+plot(x, bh, type="o", col="blue", pch="o", ylab="y", lty=1) +
+
+#add second data series to the same chart using points() and lines()
+points(x, bonf, col="red", pch="*")+
+lines(x, bonf, col="red",lty=2)+
+
+#add third data series to the same chart using points() and lines()
+points(x, data, col="dark red",pch="+") +
+lines(x, data, col="dark red", lty=3)
+```
+
+#### Interpretation
+
+> Do the results show the support the stringency of Bonferroni?\
+
+Yes, Bonferroni corrections seem to be rather stringent especially beyond the smaller indexed values. Since, the p-values increase exponentially up to a plateau but the dividing factor increases consistently leading much smaller adjusted values as the index increases.
